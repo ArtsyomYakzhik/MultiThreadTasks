@@ -1,0 +1,17 @@
+﻿<Window x:Class="MultiThreadTasks.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MultiThreadTasks"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" x:Name="Polyn"></TextBox>
+        <Button HorizontalAlignment="Center" Content="Check" VerticalAlignment="Center"  Width="250" Height="50"  x:Name="check" Margin="271,240,271,129" Click="check_Click"></Button>
+        <Label Name="result"  HorizontalAlignment="Center" VerticalAlignment="Center"  Width="250" Height="26"  Content="unchecked" Margin="271,393,271,0"></Label>
+        <Button HorizontalAlignment="Center" Content="AsyncCheck" VerticalAlignment="Center"  Width="250" Height="50"  x:Name="asynccheck" Click="asynccheck_Click" Margin="271,296,271,73"/>
+        <Label x:Name="Time"  HorizontalAlignment="Center" VerticalAlignment="Center"  Width="250" Height="50"  Content="unchecked" Margin="10,10,532,359"/>
+        <Button HorizontalAlignment="Center" Content="MulthuThreadCheck" VerticalAlignment="Center"  Width="250" Height="50"  x:Name="Multi" Click="Multi_Click" Margin="271,346,271,23"/>
+    </Grid>
+</Window>
